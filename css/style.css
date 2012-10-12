@@ -10,12 +10,69 @@ body {
    color: #fff;
 }
 
+p {
+   font-size: 16px;
+   line-height: 25.888px;
+}
+
 .constrained {
    margin: 0 auto;
    max-width: 960px;
    overflow: hidden;
    width: 100%;
 }
+
+/* Typography */
+h2, h3 {
+   text-transform: uppercase;
+}
+   h2 {
+
+   }
+   h3 {
+      font-size: 16px;
+      line-height: 25.888px;
+   }
+
+.button {
+   background-color: #cacaca;
+   border: solid 1px #b6b6b6;
+   color: #191919;
+   cursor: pointer;
+
+   line-height: 30px;
+   text-align: center;
+
+   display: block;
+   height: 30px;
+   margin: 0 auto;
+   position: relative;
+   width: 200px;
+}
+   .button::before, .button::after {
+      border: solid 1px #B8B8B8;
+      border-top: 0;
+      border-bottom: 0;
+      content: "\272D";
+      line-height: 28px;
+      display: block;
+      height: 28px;
+      width: 28px;
+      position: absolute;
+      text-align: center;
+   }
+   .button::before {
+      border-left: 0;
+      box-shadow: 1px 0 0 #E9E8E9;
+      left: 0;
+      top: 0;
+   }
+   .button::after {
+      border-right: 0;
+      box-shadow: -1px 0 0 #E9E8E9;
+      right: 0;
+      top: 0;
+   }
 
 /* Grid */
 .column {
