@@ -1,0 +1,53 @@
+/* Headings and Navigation */
+
+.l-navigation {
+
+}
+   .l-navigation a:hover, .l-navigation:focus {
+      color: #f00;
+   }
+
+/* More */
+
+.l-featured {
+   list-style-type: none;
+   overflow: hidden;
+}
+   .l-featured li {
+      display: block;
+      float: left;
+      margin-right: 4%;
+      position: relative;
+      width: 22%;
+   }
+      .l-featured li:last-child {
+         margin-right: 0;
+      }
+
+   .l-featured .speaker {
+      display: block;
+      font: 0/0 a;
+      height: 272px;
+   }
+      .l-featured .cog {
+         position: absolute;
+         bottom: -30px;
+         left: 50%;
+         margin-left: -74px;
+         z-index: -10;
+
+         -webkit-animation: none;
+      }
+         .l-featured li:hover .cog {
+            -webkit-animation: rotate 15s infinite;
+            -webkit-animation-timing-function: linear;
+         }
+
+   .l-featured .sponsor {
+      line-height: 117px;
+      text-align: center;
+   }
+
+   .l-featured.cogs {
+      padding-bottom: 31px;
+   }

@@ -1,96 +1,11 @@
-/* Fonts */
-
-@font-face {
-   font-family: Futura;
-   src: url('../fonts/FuturaStd-Medium.otf');
-   font-weight: 400;
-}
-@font-face {
-   font-family: Futura;
-   src: url('../fonts/FuturaStd-Bold.otf');
-   font-weight: 700;
-}
-
-* {
-   border: 0;
-   box-sizing: border-box;
-   margin: 0;
-   padding: 0;
-}
-
-body {
-   background-color: #000;
-   color: #fff;
-   font-family: Futura, sans-serif;
-}
+@import url('import/fonts.css');
+@import url('import/base.css');
+@import url('import/layouts.css');
+@import url('import/modules.css');
 
 body > header {
    padding-bottom: 250px;
 }
-
-p {
-   font-size: 15px;
-   line-height: 24.27px;
-}
-
-.constrained {
-   margin: 0 auto;
-   max-width: 980px;
-   overflow: hidden;
-   width: 100%;
-}
-
-/* Typography */
-h2, h3 {
-   text-transform: uppercase;
-}
-   h2 {
-
-   }
-   h3 {
-      font-size: 15px;
-      line-height: 24.27px;
-   }
-
-.button {
-   background-color: #cacaca;
-   border: solid 1px #b6b6b6;
-   color: #191919;
-   cursor: pointer;
-
-   line-height: 30px;
-   text-align: center;
-
-   display: block;
-   height: 30px;
-   margin: 0 auto;
-   position: relative;
-   width: 200px;
-}
-   .button::before, .button::after {
-      border: solid 1px #B8B8B8;
-      border-top: 0;
-      border-bottom: 0;
-      content: "\272D";
-      line-height: 28px;
-      display: block;
-      height: 28px;
-      width: 28px;
-      position: absolute;
-      text-align: center;
-   }
-   .button::before {
-      border-left: 0;
-      box-shadow: 1px 0 0 #E9E8E9;
-      left: 0;
-      top: 0;
-   }
-   .button::after {
-      border-right: 0;
-      box-shadow: -1px 0 0 #E9E8E9;
-      right: 0;
-      top: 0;
-   }
 
 /* Banner */
 [role="banner"] {
@@ -104,22 +19,27 @@ h1 {
    height: 284px;
    position: relative;
 }
-   .cog {
-      background: url('../images/cog.png') center center no-repeat;
-      background-size: cover;
-
-      display: block;
-      height: 78px;
-      width: 78px;
+   h1 .cog {
       left: 50%;
       top: 445px;
       margin-left: -39px;
       position: absolute;
-      z-index: 0;
-
+   }
+   .cog {
+      display: block;
       -webkit-animation: rotate 15s infinite;
       -webkit-animation-timing-function: linear;
    }
+      .cog-m {
+         background: url('../images/cog.png') center center no-repeat;
+         height: 78px;
+         width: 78px;
+      }
+      .cog-xl {
+         background: url('../images/cog-xl.png') center center no-repeat;
+         height: 148px;
+         width: 148px;
+      }
    h1::after {
       content: " ";
 
@@ -171,9 +91,6 @@ h1 {
       padding: 2px 24px 0;
       margin-right: 1px;
    }
-      [role="banner"] nav a:hover, [role="banner"] nav a:focus {
-         color: #f00;
-      }
       /* TODO: Refactor */
       [role="banner"] nav .first a { border-left: 0; }
       [role="banner"] nav .last a { border-right: 0; }
@@ -181,6 +98,31 @@ h1 {
    [role="banner"] nav a small {
       font: 0/0 a;
    }
+
+   /* Subnavigation */
+   footer nav {
+      border-bottom: 3px solid #191919;
+      overflow: hidden;
+      margin: 0 auto;
+      width: 695px;
+   }
+      footer nav ul {
+         list-style-type: none;
+      }
+      footer nav li {
+         float: left;
+         width: 11.1%;
+      }
+         footer nav li a {
+            color: #fff;
+            font-size: 11px;
+            font-weight: 700;
+            text-decoration: none;
+            text-transform: uppercase;
+            text-align: center;
+            display: block;
+            padding: 10px 0;
+         }
 
 /* Grid */
 .column {
@@ -190,32 +132,23 @@ h1 {
 }
    .column:last-child { margin-right: 0; }
 
+.four-up {
+   display: block;
+   float: left;
+   margin-right: 4%;
+   width: 22%;
+}
+   .four-up:last-child {
+      margin-right: 0;
+   }
+
 /* Frames */
 .frame {
-   background: #191919;
+   background: #191919 url('../images/bg-content.jpg');
    padding: 15px;
 }
+   .frame-overview {
+      padding: 30px 40px;
+      text-align: center;
+   }
 
-/* Animations */
-@-webkit-keyframes rotate {
-  0% {
-    -webkit-transform: rotate(0deg);
-  }
-  50% {
-    -webkit-transform: rotate(180deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-  }
-}
-@-moz-keyframes rotate {
-  0% {
-    -moz-transform: rotate(0deg);
-  }
-  50% {
-    -moz-transform: rotate(180deg);
-  }
-  100% {
-    -moz-transform: rotate(360deg);
-  }
-}

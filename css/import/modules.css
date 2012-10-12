@@ -1,0 +1,109 @@
+/*
+
+   Contents
+   ========
+   1. Buttons
+
+*/
+
+/* 1. Buttons */
+.btn-wide {
+   background-color: #cacaca;
+   border: solid 1px #b6b6b6;
+   color: #880202;
+   cursor: pointer;
+
+   font-weight: 700;
+   line-height: 30px;
+   text-align: center;
+   text-transform: uppercase;
+
+   display: block;
+   height: 30px;
+   margin: 0 auto;
+   position: relative;
+   width: 200px;
+}
+   .btn-wide::before, .btn-wide::after {
+      border: solid 1px #B8B8B8;
+      border-top: 0;
+      border-bottom: 0;
+      content: "\272D";
+      color: #191919;
+      line-height: 28px;
+      display: block;
+      height: 28px;
+      width: 28px;
+      position: absolute;
+      text-align: center;
+   }
+   .btn-wide::before {
+      border-left: 0;
+      box-shadow: 1px 0 0 #E9E8E9;
+      left: 0;
+      top: 0;
+   }
+   .btn-wide::after {
+      border-right: 0;
+      box-shadow: -1px 0 0 #E9E8E9;
+      right: 0;
+      top: 0;
+   }
+   .btn-wide:hover, .btn-wide:focus {
+      color: #f00;
+   }
+
+.btn-video {
+   background: url('../../images/btn-play.png') center center no-repeat;
+
+   font: 0/0 a;
+
+   display: block;
+   height: 60px;
+   width: 100%;
+}
+
+.btn-join {
+   background: transparent;
+
+   font: 0/0 a;
+
+   display: block;
+   height: 87px;
+   width: 143px;
+   position: absolute;
+   top: 187px;
+   left: 726px;
+}
+   .btn-join:hover {
+      background: url('../../images/join.gif') center center no-repeat;
+   }
+
+/* More */
+.textured {
+   background: #191919 url('../../images/bg-content.jpg');
+}
+
+.speaker {
+   background-size: cover !important; /* Not sure why this needs "!important". */
+   border: 2px solid #191919;
+}
+   .speaker-estelle { background: url('../../images/speakers/estelle.jpg') center center no-repeat; }
+   .speaker-mike { background: url('../../images/speakers/mike.jpg') center center no-repeat; }
+   .speaker-garann { background: url('../../images/speakers/garann.jpg') center center no-repeat; }
+   .speaker-christopher { background: url('../../images/speakers/christopher.jpg') center center no-repeat; }
+
+.sponsor {
+   background: #5a3805;
+   color: #fff;
+   text-decoration: none;
+   display: block;
+}
+   .sponsor-kendoui {
+      background: #5a3805 url('../../images/sponsors/kendoui.png') center center no-repeat;
+      font: 0/0 a;
+   }
+   .sponsor-thundertix {
+      background: #5a3805 url('../../images/sponsors/thundertix.png') center center no-repeat;
+      font: 0/0 a;
+   }
