@@ -54,7 +54,7 @@
    }
 
 .btn-video {
-   background: url('../../images/btn-play.png') center center no-repeat;
+   background: url('../../images/btn-play.png') top center no-repeat;
 
    font: 0/0 a;
 
@@ -62,6 +62,9 @@
    height: 60px;
    width: 100%;
 }
+   .btn-video:hover {
+      background-position: bottom center;
+   }
 
 .btn-join {
    background: transparent;
