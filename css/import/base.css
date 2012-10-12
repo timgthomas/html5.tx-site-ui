@@ -11,11 +11,19 @@ body {
    font-family: Futura, sans-serif;
 }
 
-.constrained {
+.group {
    margin: 0 auto 30px;
    max-width: 980px;
-   overflow: hidden;
    width: 100%;
+}
+
+.group:before,
+.group:after {
+   content: "";
+   display: table;
+} 
+.group:after {
+   clear: both;
 }
 
 /* Headings */

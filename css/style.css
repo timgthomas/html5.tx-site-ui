@@ -4,7 +4,7 @@
 @import url('import/modules.css');
 
 body > header {
-   padding-bottom: 250px;
+   padding-bottom: 185px;
 }
 
 /* Banner */
@@ -91,7 +91,7 @@ h1 {
       padding: 2px 24px 0;
       margin-right: 1px;
    }
-   
+
       /* TODO: Refactor */
       [role="banner"] nav .first a { border-left: 0; }
       [role="banner"] nav .last a { border-right: 0; }
