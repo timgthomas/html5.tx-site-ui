@@ -1,0 +1,32 @@
+* {
+   border: 0;
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   background-color: #000;
+   color: #fff;
+}
+
+.constrained {
+   margin: 0 auto;
+   max-width: 960px;
+   overflow: hidden;
+   width: 100%;
+}
+
+/* Grid */
+.column {
+   float: left;
+   margin-right: 4%;
+   width: 48%;
+}
+   .column:last-child { margin-right: 0; }
+
+/* Frames */
+.frame {
+   background: #191919;
+   padding: 15px;
+}
