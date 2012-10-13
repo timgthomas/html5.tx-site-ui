@@ -55,13 +55,26 @@
 
 .btn-video {
    background: url('../../images/btn-play.png') top center no-repeat;
+   border-left: 12px solid #000;
+   border-right: 12px solid #000;
 
    font: 0/0 a;
 
    display: block;
    height: 60px;
-   width: 100%;
+   margin: 0 50px;
+   position: relative;
 }
+.btn-video:before, .btn-video:after {
+   content: "";
+   position: absolute;
+   top: 12px;
+   width: 50px;
+   height: 12px;
+   border-top: 36px double #000;
+}
+   .btn-video:before { left: -62px; }
+   .btn-video:after { right: -62px; }
    .btn-video:hover {
       background-position: bottom center;
    }
@@ -87,6 +100,18 @@
    background: #191919 url('../../images/bg-content.jpg');
 }
 
+.static {
+   width:100%;
+   height:100%;
+   position:absolute;
+   top:0;
+   left:0;
+   background:url('../../images/static.png') repeat;
+   z-index:10;
+
+   -webkit-animation: backgroundmove infinite 0.1s linear;
+}
+
 .speaker {
    background-size: cover !important; /* Not sure why this needs "!important". */
    border: 2px solid #191919;
@@ -95,6 +120,9 @@
    .speaker-mike { background: url('../../images/speakers/mike.jpg') center center no-repeat; }
    .speaker-garann { background: url('../../images/speakers/garann.jpg') center center no-repeat; }
    .speaker-christopher { background: url('../../images/speakers/christopher.jpg') center center no-repeat; }
+
+   .speaker .static { display: none; }
+   .speaker:hover .static { display: block; }
 
 .sponsor {
    background: #5a3805;
@@ -109,4 +137,46 @@
    .sponsor-thundertix {
       background: #5a3805 url('../../images/sponsors/thundertix.png') center center no-repeat;
       font: 0/0 a;
+   }
+
+.social {}
+   .social a { font: 0/0 a; }
+   .social > a, .social > span { display: block; float: right; }
+   .social.last > a, .social.last > span { display: block; float: left; margin-right: 20px; }
+
+.social-self {
+   background: url('../../images/btn-social-self.jpg') center center no-repeat;
+   height: 105px;
+   width: 277px;
+}
+
+.social-blog {
+   background: url('../../images/btn-social-blog.png') center center no-repeat;
+   height: 94px;
+   width: 219px;
+   margin: 5px 0;
+}
+
+.social-media {
+   background: url('../../images/btn-social.png') center center no-repeat;
+   margin: 5px 0;
+   height: 94px;
+   width: 97px;
+   position: relative;
+}
+   .social-media .twitter {
+      display: block;
+      height: 58px;
+      width: 48px;
+      position: absolute;
+      left: 0;
+      top: 0;
+   }
+   .social-media .facebook {
+      display: block;
+      height: 52px;
+      width: 48px;
+      position: absolute;
+      left: 48px;
+      top: 32px;
    }
