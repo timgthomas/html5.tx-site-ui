@@ -2,6 +2,7 @@
 @import url('import/base.css');
 @import url('import/layouts.css');
 @import url('import/modules.css');
+@import url('import/viewports.css');
 
 body > header {
    padding-bottom: 185px;
@@ -55,6 +56,12 @@ h1 {
       z-index: 10;
    }
 
+hr {
+   border: solid 2px #2c2c2c;
+   margin: 0 auto;
+   width: 200px;
+}
+
 /* Navigation */
 [role="banner"] nav {
    background: url('../images/bg-nav.jpg') top center no-repeat;
@@ -102,17 +109,20 @@ h1 {
 
    /* Subnavigation */
    footer nav {
-      border-bottom: 3px solid #191919;
-      overflow: hidden;
       margin: 0 auto;
       width: 695px;
    }
       footer nav ul {
+         border-bottom: 4px solid #2c2c2c;
+         display: table;
          list-style-type: none;
+         width: 100%;
       }
+         footer nav ul:last-child {
+            border-bottom: 0;
+         }
       footer nav li {
-         float: left;
-         width: 11.1%;
+         display: table-cell;
       }
          footer nav li a {
             color: #fff;
@@ -126,12 +136,7 @@ h1 {
          }
 
 /* Grid */
-.column {
-   float: left;
-   margin-right: 4%;
-   width: 48%;
-}
-   .column:last-child { margin-right: 0; }
+
 
 .four-up {
    display: block;

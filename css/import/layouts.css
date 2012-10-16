@@ -15,14 +15,9 @@
 }
    .l-featured li {
       display: block;
-      float: left;
-      margin-right: 4%;
       position: relative;
-      width: 22%;
+      float: left;
    }
-      .l-featured li:last-child {
-         margin-right: 0;
-      }
 
    .l-featured .speaker {
       display: block;

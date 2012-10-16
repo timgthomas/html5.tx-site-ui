@@ -1,0 +1,38 @@
+@media only screen and (max-width: 549px) {
+
+   /* Miscellaneous */
+   .l-featured li {
+      margin-right: 4%;
+      width: 48%;
+   }
+      .l-featured li:nth-child(even) {
+         margin-right: 0;
+      }
+
+}
+
+@media only screen and (min-width: 550px) {
+
+   /* Bases */
+
+   /* Layouts */
+
+   /* Modules */
+
+   /* Miscellaneous */
+   .column {
+      float: left;
+      margin-right: 4%;
+      width: 48%;
+   }
+      .column:last-child { margin-right: 0; }
+
+   .l-featured li {
+      margin-right: 4%;
+      width: 22%;
+   }
+      .l-featured li:last-child {
+         margin-right: 0;
+      }
+
+}
