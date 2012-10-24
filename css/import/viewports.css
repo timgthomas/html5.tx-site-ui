@@ -1,7 +1,39 @@
+@media only screen and (min-width: 360px) {
+
+   /* Bases */
+   footer nav li {
+      width: 25%;
+   }
+
+   /* Modules */
+   footer .copyright hr {
+      display: none;
+   }
+
+   footer .copyright li {
+      width: 50%;
+   }
+
+}
+
+@media only screen and (min-width: 480px) {
+
+   /* Layouts */
+   .l-featured .speaker { height: 224px; }
+
+}
+
 @media only screen and (max-width: 549px) {
 
-   /* Miscellaneous */
+   /* More */
+
+   /* Note: Shouldn't need this once the navigation styles are outside style.css. */
+   [role="banner"] nav a {
+      display: none;
+   }
+
    .l-featured li {
+      margin-bottom: 20px;
       margin-right: 4%;
       width: 48%;
    }
@@ -17,16 +49,6 @@
 
    /* Layouts */
 
-   /* Modules */
-
-   /* Miscellaneous */
-   .column {
-      float: left;
-      margin-right: 4%;
-      width: 48%;
-   }
-      .column:last-child { margin-right: 0; }
-
    .l-featured li {
       margin-right: 4%;
       width: 22%;
@@ -35,4 +57,217 @@
          margin-right: 0;
       }
 
+   .social {
+      display: table;
+   }
+
+   .social-item {
+      display: table-cell;
+      margin: 0;
+      height: 100px;
+      width: 33.3%;
+   }
+
+   /* More */
+
+   [role="banner"] nav a {
+      display: none;
+   }
+
+   .column {
+      float: left;
+      margin-bottom: 0;
+      margin-right: 4%;
+      width: 48%;
+   }
+      .column:last-child { margin-right: 0; }
+
+   .column-em {
+      width: 70%;
+   }
+
+   .column-deem {
+      width: 26%;
+   }
+
+   .frame-overview {
+      padding: 30px 40px;
+   }
+
+}
+
+@media only screen and (min-width: 640px) {
+
+   /* Bases */
+   
+
+   
+
+   footer nav ul {
+      display: table;
+   }
+      footer nav li {
+         display: table-cell;
+         float: none;
+         width: auto;
+      }
+
+   footer .copyright hr {
+      display: block;
+   }
+
+   /* Layouts */
+
+   /* Modules */
+   footer .copyright li {
+      width: 33%;
+   }
+
+   /* More */
+
+   body > header.home {
+      padding-bottom: 135px;
+   }
+
+   
+
+   
+
+   [role="banner"] nav a {
+      display: block;
+      font-size: 15px;
+      padding: 2px auto 0;
+   }
+
+}
+
+@media only screen and (min-width: 768px) {
+
+   /* Bases */
+   
+
+   
+
+   /* Layouts */
+   .l-featured .cog { display: block; }
+
+   /* More */
+   
+   [role="banner"] nav a {
+      font-size: 17px;
+   }
+
+}
+
+@media only screen and (min-width: 900px) {
+
+   /* Bases */
+   p {
+      font-size: 15px;
+      line-height: 24.27px;
+      margin-bottom: 9.27px;
+   }
+
+   .home h1::after {
+      margin-left: -251.5px;
+      top: 127px;
+      width: 503px;
+   }
+
+   /* Layouts */
+   .l-featured .speaker {
+      height: 272px;
+   }
+
+   /* Modules */
+   .content-frame {
+      padding: 30px 30px 20px;
+   }
+
+   /* More */
+
+   body > header.home {
+      padding-bottom: 185px;
+   }
+
+   .home h1 .cog {
+      top: 386px;
+      margin-left: -39px;
+      height: 78px;
+      width: 78px;
+   }
+
+   [role="banner"] nav a {
+      font-size: 20px;
+   }
+
+}
+
+@media only screen and (min-width: 980px) {}
+
+/* Banner Viewports */
+
+@media only screen and (min-width: 480px) {
+   h1 {
+      background: url('../../images/banner-t.png') top center no-repeat;
+      height: 138px;
+   }
+
+   h1::after {
+      background: url('../../images/eagle-s.png') center center no-repeat;
+      height: 160px;
+      width: 286px;
+      margin-left: -143px;
+      bottom: -85px;
+   }
+
+   .home h1::after { top: 13px; }
+   .home h1 .cog { top: 242px; }
+}
+@media only screen and (min-width: 640px) {
+   h1 {
+      background: url('../../images/banner-s.png') top center no-repeat;
+      height: 184px;
+   }
+
+   .home h1::after {
+      margin-left: -190px;
+      top: 75px;
+      width: 380px;
+   }
+
+   .home h1 .cog {
+      top: 314px;
+      margin-left: -32px;
+      height: 64px;
+      width: 64px;
+   }
+}
+@media only screen and (min-width: 768px) {
+   h1 {
+      background: url('../../images/banner-m.png') top center no-repeat;
+      height: 221px;
+   }
+
+   .home h1 .cog { top: 349px; }
+   .home h1::after { top: 112px; }
+}
+@media only screen and (min-width: 900px) {
+   .home h1::after {
+      margin-left: -251.5px;
+      top: 127px;
+      width: 503px;
+   }
+}
+@media only screen and (min-width: 980px) {
+   h1 {
+      background: url('../../images/banner-l.png') top center no-repeat;
+      height: 259px;
+   }
+
+   .home h1::after {
+      top: 165px;
+   }
+
+   .home h1 .cog { top: 424px; }
 }

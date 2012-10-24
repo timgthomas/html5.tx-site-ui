@@ -4,30 +4,33 @@
 
 <head>
    <title>HTML5.tx 2013</title>
+   <meta name="viewport" content="width=device-width">
    <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-   <header class="group" role="banner">
-      <h1>HTML5.tx 2013<span class="cog cog-m"></span></h1>
+<body class="home">
+   <header class="group home" role="banner">
+      <h1>HTML5.tx 2013<span class="cog"></span></h1>
       <a class="btn-join" href="#">Join</a>
       <nav class="l-navigation" role="navigation">
-         <ul>
-            <li class="left first"><a href="#">H<small>o</small>me</a></li>
-            <li class="left"><a href="#">Ab<small>ou</small>t</a></li>
-            <li class="left last"><a href="#">N<small>e</small>ws</a></li>
-            <li class="right last"><a href="#">2011</a></li>
-            <li class="right"><a href="#">V<small>i</small>d<small>eo</small>s</a></li>
-            <li class="right first"><a href="#">C<small>o</small>nt<small>a</small>ct</a></li>
+         <ul class="left">
+            <li class="first"><a href="index.html">H<small>o</small>me</a></li>
+            <li><a href="about.html">Ab<small>ou</small>t</a></li>
+            <li class="last"><a href="news.html">N<small>e</small>ws</a></li>
+         </ul>
+         <ul class="right">
+            <li class="first"><a href="contact.html">C<small>o</small>nt<small>a</small>ct</a></li>
+            <li><a href="http://2011.html5tx.com/videos">V<small>i</small>d<small>eo</small>s</a></li>
+            <li class="last"><a href="http://2011.html5tx.com/">2011</a></li>
          </ul>
       </nav>
    </header>
    <div class="group" role="main">
-      <section class="column frame frame-overview textured">
+      <section class="column content-frame">
          <p>HTML5.tx is a premium-grade conference for all things HTML, CSS and JavaScript. Our inaugural event was held in Austin, in 2011 and the second edition is slated for Feb 2nd, 2013. Check out the promo video for a recap of last year's event, and to get a preview of what's in store for 2013.</p>
          <a class="btn-wide">Join</a>
       </section>
-      <section class="column frame frame-overview textured">
+      <section class="column content-frame">
          <p><strong>HTML5.TX</strong></p>
          <p><strong>February 02, 2013</strong></p>
          <p><strong>AUSTIN, TEXAS</strong></p>
@@ -54,22 +57,23 @@
          <li><a class="sponsor" href="mailto:sponsorship@html5tx.com">Your Brand Here!</a></li>
       </ul>
    </div>
-   <div class="group" role="main">
-      <section class="column social">
+   <div class="group social" role="main">
+      <div href="#" class="social-item">
          <a class="social-self" href="#">HTML5.tx 2013</a>
-      </section>
-      <section class="column social last">
-         <a class="social-blog" href="#">Read the Blog</a>
+      </div>
+      <div class="social-item">
          <span class="social-media">
             <a class="twitter" href="#">Twitter</a>
             <a class="facebook" href="#">Facebook</a>
          </span>
-      </section>
+      </div>
+      <div href="#" class="social-item">
+         <a class="social-blog" href="#">Read the Blog</a>
+      </div>
    </div>
-   <!-- Social Networks and other stuff -->
    <footer class="group">
       <nav class="l-navigation">
-         <ul>
+         <ul class="links">
             <li><a href="#">Register</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Speakers</a></li>
@@ -78,9 +82,8 @@
             <li><a href="#">Videos</a></li>
             <li><a href="#">Contact</a></li>
             <li><a href="#">Sponsorship</a></li>
-            <li><a href="#">Videos</a></li>
          </ul>
-         <ul>
+         <ul class="copyright">
             <li><a href="#">Copyright 2012 HTML5.tx</a></li>
             <li><hr /></li>
             <li><a href="#">Design: Drifting Creatives</a></li>

@@ -22,9 +22,10 @@
    .l-featured .speaker {
       display: block;
       font: 0/0 a;
-      height: 272px;
+      height: 172px;
    }
       .l-featured .cog {
+         display: none;
          position: absolute;
          bottom: -30px;
          left: 50%;

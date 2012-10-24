@@ -9,10 +9,95 @@ body {
    background-color: #000;
    color: #fff;
    font-family: Futura, sans-serif;
+   padding: 0 10px;
 }
+
+   body > header.home {
+      padding-bottom: 55px;
+   }
+
+h1 {
+   background: url('../../images/banner-tt.png') top center no-repeat;
+   height: 92px;
+}
+
+h2, h3 {
+   text-transform: uppercase;
+}
+
+h2 {
+   font-size: 16px;
+   line-height: 26px;
+   margin-bottom: 10px;
+   text-align: left;
+}
+
+h3 {
+   font-size: 15px;
+   line-height: 24.27px;
+}
+
+p {
+   font-size: 13px;
+   line-height: 21.03px;
+   margin-bottom: 8.03px;
+   text-align: justify;
+}
+   .home p {
+      text-align: center;
+   }
+
+p a { color: #fff; }
+   p a:hover { color: #f00; }
+
+hr {
+   border: solid 2px #2c2c2c;
+   display: none;
+   margin: 0 auto;
+   width: 200px;
+}
+
+/* Forms */
+form {}
+   form p {
+      background: #cacaca;
+      border: 1px solid #b6b6b6;
+      color: #191919;
+      overflow: hidden;
+      padding: 0 16px;
+   }
+   form label {
+      font-size: 10px;
+      line-height: 40px;
+      font-weight: 700;
+      text-transform: uppercase;
+
+      display: block;
+      float: left;
+      width: 20%;
+   }
+      form label.textarea {
+         width: 100%;
+      }
+   form input, form textarea {
+      background: transparent;
+      border: 0;
+      font-size: 12px;
+      outline: none;
+   }
+      form input {
+         float: left;
+         height: 40px;
+         width: 80%;
+      }
+      form textarea {
+         height: 100px;
+         width: 100%;
+      }
 
 .group {
    margin: 0 auto 30px;
+   min-width: 300px;
    max-width: 980px;
    width: 100%;
 }
@@ -26,20 +111,58 @@ body {
    clear: both;
 }
 
-/* Headings */
-h2, h3 {
-   text-transform: uppercase;
-}
-h3 {
-   font-size: 15px;
-   line-height: 24.27px;
+.column {
+   margin-bottom: 20px;
 }
 
-p {
-   font-size: 15px;
-   line-height: 24.27px;
-   margin-bottom: 9.27px;
+/* Headings */
+h1 {}
+   h1 .cog {
+      left: 50%;
+      position: absolute;
+      top: 195px;
+      margin-left: -18px;
+      height: 36px;
+      width: 36px;
+   }
+
+   h1::after {
+      content: " ";
+      background: url('../../images/eagle-xs.png') center center no-repeat;
+      background-size: contain !important;
+      display: block;
+      position: absolute;
+      left: 50%;
+      z-index: 10;
+      height: 112px;
+      width: 200px;
+      margin-left: -100px;
+      bottom: -67px;
+   }
+
+   .home .cog {
+      background: url('../../images/cog.png') center center no-repeat;
+      background-size: contain;
+      display: block;
+      -webkit-animation: rotate 15s infinite;
+      -webkit-animation-timing-function: linear;
+   }
+   .home h1::after {
+      background: url('../../images/eagle.png') center center no-repeat;
+      height: 390px;
+      top: -34px;
+      margin-left: -125px;
+      width: 250px;
+   }
+
+footer nav ul {
+   display: block;
+   overflow: hidden;
 }
+   footer nav li {
+      float: left;
+      width: 50%;
+   }
 
 /* Animations */
 @-webkit-keyframes rotate {

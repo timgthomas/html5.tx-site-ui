@@ -2,11 +2,20 @@
 
    Contents
    ========
-   1. Buttons
+   1. Frames
+   2. Buttons
 
 */
 
-/* 1. Buttons */
+/* 1. Frames */
+.content-frame {
+   background: #191919 url('../../images/bg-content.jpg');
+   padding: 15px 15px 10px;
+}
+   section > .content-frame { margin-bottom: 20px; }
+      section > .content-frame:last-child { margin-bottom: 0; }
+
+/* 2. Buttons */
 .btn-wide {
    background-color: #cacaca;
    border: solid 1px #b6b6b6;
@@ -113,13 +122,15 @@
 }
 
 .speaker {
-   background-size: cover !important; /* Not sure why this needs "!important". */
+   background-size: cover;
+   background-position: center center;
+   background-repeat: no-repeat;
    border: 2px solid #191919;
 }
-   .speaker-estelle { background: url('../../images/speakers/estelle.jpg') center center no-repeat; }
-   .speaker-mike { background: url('../../images/speakers/mike.jpg') center center no-repeat; }
-   .speaker-garann { background: url('../../images/speakers/garann.jpg') center center no-repeat; }
-   .speaker-christopher { background: url('../../images/speakers/christopher.jpg') center center no-repeat; }
+   .speaker-estelle { background-image: url('../../images/speakers/estelle.jpg'); }
+   .speaker-mike { background-image: url('../../images/speakers/mike.jpg'); }
+   .speaker-garann { background-image: url('../../images/speakers/garann.jpg'); }
+   .speaker-christopher { background-image: url('../../images/speakers/christopher.jpg'); }
 
    .speaker .static { display: none; }
    .speaker:hover .static { display: block; }
@@ -132,29 +143,44 @@
 }
    .sponsor-kendoui {
       background: #5a3805 url('../../images/sponsors/kendoui.png') center center no-repeat;
+      background-size: contain;
       font: 0/0 a;
    }
    .sponsor-thundertix {
       background: #5a3805 url('../../images/sponsors/thundertix.png') center center no-repeat;
+      background-size: contain;
       font: 0/0 a;
    }
 
-.social {}
-   .social a { font: 0/0 a; }
-   .social > a, .social > span { display: block; float: right; }
-   .social.last > a, .social.last > span { display: block; float: left; margin-right: 20px; }
+.social {
+   display: block;
+}
+
+.social-item {
+   display: block;
+   position: relative;
+   margin: 0 0 10px;
+   height: 100px;
+   width: 100%%;
+}
+   .social-item > a,
+   .social-item > span {
+      background-size: contain !important;
+      display: block;
+      font: 0/0 a;
+      margin: 0 auto;
+   }
+   .social-item > a {
+      height: 100%;
+      width: 100%;
+   }
 
 .social-self {
    background: url('../../images/btn-social-self.jpg') center center no-repeat;
-   height: 105px;
-   width: 277px;
 }
 
 .social-blog {
    background: url('../../images/btn-social-blog.png') center center no-repeat;
-   height: 94px;
-   width: 219px;
-   margin: 5px 0;
 }
 
 .social-media {
